@@ -77,8 +77,8 @@ function Home() {
         {showAgent && (
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <VoiceAgent
-              apiKey="c225fed8-c424-4a52-bd1d-0bcf37ab16de"
-              assistantId="a45c038d-acc0-48ed-a537-0e9930935e43"
+              apiKey= {import.meta.env.VAPI_API_KEY}
+              assistantId={import.meta.env.VAPI_AGENT_ID}
             />
           </div>
         )}

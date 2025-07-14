@@ -5,7 +5,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 const FirebaseContext = createContext(null);
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCAJ9YE3rf2hghyZ1woEx53NzeNX8oM6b0",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "aishopping-a0476.firebaseapp.com",
   projectId: "aishopping-a0476",
   storageBucket: "aishopping-a0476.firebasestorage.app",
